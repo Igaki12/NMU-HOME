@@ -1,24 +1,22 @@
 import logo from './logo.svg'
 import './App.css'
+import { Box, Image, Text } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box textAlign={'center'} mr="auto" ml="auto">
+        <Text fontSize="2xl">NMU HOME</Text>
+        <Image
+          mt="-5"
+          src={logo}
+          className="App-logo"
+          alt="logo"
+          mr="auto"
+          ml="auto"
+        />
+      </Box>
+    </>
   )
 }
 
